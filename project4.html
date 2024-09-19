@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 - Detailed Overview</title>
+    <link rel="stylesheet" href="projectstyle.css"> 
+</head>
+
+<body>
+    <header>
+        <h1>Max Usher</h1>
+        <p>Mechanical Engineer | Automotive Enthusiast</p>
+        <h2> </h2>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1></h1>
+        <a href="index.html">Back to Projects</a> 
+        <div class="header-band"></div>
+    </header>
+
+    <section id="title">
+        <body>
+            <div class="page-title">
+                <div class="project-image-intake2">
+                    <img src="images/collective1.jpg" alt="Project 1 image" style="width:100%">
+                    <div class="centered">Arduino powered collective</div>
+                </div>
+            </div>
+        </body>
+    </section>
+
+    <section id="info">
+        <body>
+            <div class="information">
+                <h2>Background</h2>
+                <h2> </h2>
+                <p>For my Dad&apos;s birthday I wanted to get him a collecitve that he could used in his helicopter sumulator games. The ones that were available on the market started at almost $400 for a very simple one with one or two buttons and the very cheap ones started at $100 for just a handle you could pivot, so I decided to build him one myself that would give the most functionality for a very reasonable price.</p>
+                <h2> </h2>
+                <h2>Process</h2>
+                <p>The design process began with setting a clear set of goals, the primary objective being the incorporation of multiple functional inputs. I sketched several concepts, each with distinct features, and selected the most practical elements from each to integrate into the final design. With these components in mind, I started building a rough model in SolidWorks. This initial model helped me better understand the overall scale and identify where key hardware elements would be placed. From there, I iterated on the design to ensure I used the most cost-effective parts available, such as a PVC pipe for the main stalk and a potentiometer for angle input.</p>
+                <p>Given that the usual 3D printing resources were unavailable during the semester, I needed to pay per gram for printing from an outside source. This made optimizing the 3D-printed components critical, as I had to strike a balance between minimizing material usage and ensuring sufficient strength. Using SolidWorks, I performed FEA to verify that each part could withstand the expected stresses and impacts. Once I was confident in the design's durability, I printed the necessary parts and began assembly.</p>
+                <p>For the input system, I selected three buttons, two toggle switches, and a three-way momentary toggle, all mounted on the head of the stalk. I carefully routed the wiring down the stalk to the base, where the Arduino controller would be housed. To ensure the stalk could remain in any position without succumbing to gravity, I incorporated a spring system that provided consistent resistance. Additionally, I implemented a 3:1 gear ratio between the potentiometer and the stalk, allowing for precise control with 0.16 inches of travel for each degree of stalk pivot.</p>
+                <p>To mount the system securely to the office chair, I used 80/20 extruded aluminum to extend from the chair's base and employed a custom SendCutSend bracket to hold everything in place. After assembling the entire unit, I mounted it to the chair, installed a software plug-in that enabled Arduino inputs to communicate with the flight simulator, and connected the Arduino to the computer.</p>
+                <p>The completed project functions exceptionally well, providing a much more immersive flight simulator experience by offering precise control and seamless integration.</p>
+            </div>
+        </body>
+    </section>
+</body>

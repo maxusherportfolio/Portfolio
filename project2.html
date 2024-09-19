@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 - Detailed Overview</title>
+    <link rel="stylesheet" href="projectstyle.css">
+</head>
+
+<body>
+    <header>
+        <h1>Max Usher</h1>
+        <p>Mechanical Engineer | Automotive Enthusiast</p>
+        <h2> </h2>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1></h1>
+        <a href="index.html">Back to Projects</a> 
+        <div class="header-band"></div>
+    </header>
+
+    <section id="title">
+        <body>
+            <div class="page-title">
+                <div class="project-image-intake2">
+                    <img src="images/intake3.jpg" alt="Project 1 image" style="width:100%">
+                    <div class="centered">CARBON FIBER INTAKE MANIFOLD</div>
+                </div>
+            </div>
+        </body>
+    </section>
+
+    <section id="info">
+        <body>
+            <div class="information">
+                <h2>Background</h2>
+                <h2> </h2>
+                <p>Eventually I would like to engine swap the 325e from the 2.7 ETA motor that came with it to an M52b28 2.8 liter from a succesive generation E36. The M52 swap is a hugely popular modification to the E30 chasis and the go saying is that the E30 should have come with the M52. The new enigne bolts right in with new transmission and engine mounts, however there is considerable interference between the intake and the stock brake booster. To get around this there are the options of relocating the booster or changing to a booster from a Porsche 944, the former requiring quite a bit of work and the latter resulting in a worse pedal feel.</p>
+                <h2> </h2>
+                <p>The goal of this project was to make an intake that allowed proper clearance between the booster and the intake, improve air flow through the manifold, and to be an opportunity to learn more about intake manifold design.</p>
+                <h2>Process</h2>
+                <p>The process for creating the intake began by going to a junkyard and taking off an intake from an M52, I then used a caliper and protractor to measure and document all important information. Next I recreated the intake in Solidworks to use as a base point and using 2D CFD I analyzed the bellmouths that came stock to see how they performed and noted them.</p>
+                <p>From there it was relatively easy to see where I could improve it and where i could implement dimensional changes to ensure the intake performed better. The first place I attacked was the opening between the runners and the intake port on the head, in the stock manifold the runner opening is almost 20% smaller than the corresponding opening on the head which limited the volumetric efficiency. Doing some simple math for the velocity of the air going into the head on the stock intake I got a good traget to aim for with the updated one, and by implementing a 2 degree taper into the runners I was able to get the velocities quite close. Next up I designed the runners around a 3 dimensional curve to get the plenum over 2.5 inches away from where the interference would be, this not only gave me the clearance needed, but also allowed the runner length to be lengthened and help provide more mid-range torque. With the runners in place I designed the plenum, this involved creating a more efficient bellmouth design and designing the plenum so that the different runners saw simular pressures in the CFD analysis. Ensuring that the runners had simular pressures was critical as in the first iteration I found that the pressure between the first and third runners varied by 3.8%, resulting in almost half a point difference in air fuel ratio required between the two cylinders. This would have been especially hard to tune out for me so ensuring that the pressures were very simular was paramound.</p>
+                <p>The plenum volume was also increased to almost 3 times the displacement of the engine to allow better flow from the throttle to the bellmouths. After the intake was designed I used the specs available for the specific carbon fiber weave and epoxy that I was using to run FEA on the intake to ensure that it would handle its own weight, the weight of the throttle and various components, and both at 3g's of acceleration as a good safety net. After finding out that 3 layers of caron fiber would have been plently strong enough, given that the first layer would be in individual sections for easier assembly, I 3d printed molds out of PETG to be wrapped. Now that I have all of the parts I have slowly been assembling them all together to make the intake.</p>
+            </div>
+        </body>
+    </section>
+</body>
